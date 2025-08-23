@@ -19,9 +19,10 @@ RUN apt-get update && \
 # Add GTSAM PPA repository and install
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    add-apt-repository ppa:borglab/gtsam-release-4.0 -y && \
+    add-apt-repository ppa:borglab/gtsam-release-4.0  -y && \
+    add-apt-repository ppa:borglab/gtsam-develop -y && \
     apt-get update && \
-    apt-get install -y libgtsam4.0.2 libgtsam-dev && \
+    apt-get install -y libgtsam-dev libgtsam-unstable-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Create user and configure sudo privileges
