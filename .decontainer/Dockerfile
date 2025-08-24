@@ -37,6 +37,6 @@ WORKDIR /home/$USERNAME
 
 # Configure bashrc
 RUN echo "source /opt/ros/kinetic/setup.bash" >> /home/$USERNAME/.bashrc && \
-    echo "source /home/yutou/ros_ws/devel/setup.bash" >> /home/$USERNAME/.bashrc
+    echo "source ~/lio_sam/ros_ws/devel/setup.bash" >> /home/$USERNAME/.bashrc
 
 CMD ["/bin/bash"]

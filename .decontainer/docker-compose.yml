@@ -5,7 +5,7 @@ services:
     #   context: .  # 当前目录为上下文
     #   dockerfile: ./Dockerfile
     image: yutou/lio_sam  # 替换为你的镜像名
-    container_name: lio-sam-container1
+    container_name: lio-sam-container
 
     environment:
       - DISPLAY=${DISPLAY}  # GUI 支持
